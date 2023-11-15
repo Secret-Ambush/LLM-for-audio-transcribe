@@ -1,6 +1,7 @@
 import assemblyai as aai
 
-aai.settings.api_key = f"Need a KEY"
+
+aai.settings.api_key = f"need a key 🥲"
 
 def getValues(transcript: aai.RealtimeTranscript):
     prompt = "Which of the following directions is in the script (Straight/Left/Right)?"
@@ -44,7 +45,7 @@ transcriber = aai.RealtimeTranscriber(
 )
 
 transcriber.connect()
-
+print("Hello there!")
 microphone_stream = aai.extras.MicrophoneStream(sample_rate=16_000)
 transcriber.stream(microphone_stream)
 
